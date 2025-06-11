@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# KSP Manager - Data Kredit Peminjam
 
-## Getting Started
+Aplikasi manajemen data kredit peminjam untuk Koperasi Simpan Pinjam.
 
-First, run the development server:
+## Cara Download dan Menjalankan Aplikasi
 
+1. Clone repository ini:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone <repository-url>
+cd ksp-manager
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Jalankan aplikasi:
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Buka browser dan akses:
+```
+http://localhost:8000
+```
 
-## Learn More
+## Teknologi yang Digunakan
 
-To learn more about Next.js, take a look at the following resources:
+- Next.js 15
+- Tailwind CSS
+- Shadcn UI Components
+- TypeScript
+- Lucide Icons
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Fitur
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Dashboard dengan ringkasan data
+- Data Anggota
+- Data Pinjaman
+- Pembayaran
+- Laporan
+- Tampilan jatuh tempo mingguan
+- Riwayat transaksi terbaru
 
-## Deploy on Vercel
+## Struktur Project
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
+src/
+├── app/
+│   ├── layout.tsx
+│   ├── page.tsx
+│   └── globals.css
+├── components/
+│   ├── DashboardCard.tsx
+│   ├── DueThisWeekTable.tsx
+│   ├── LatestTransactionsTable.tsx
+│   └── Sidebar.tsx
+└── lib/
+    └── utils.ts
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Requirements
+
+- Node.js 18.0 atau lebih baru
+- NPM 8.0 atau lebih baru
+
+## Lisensi
+
+MIT License
